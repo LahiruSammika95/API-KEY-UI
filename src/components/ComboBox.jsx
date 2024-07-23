@@ -3,7 +3,10 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
-export default function ComboBox({options,placeholder}) {
+
+
+export default function ComboBox({options,placeholder,handleSelect}) {
+
   return (
     <Autocomplete
       id="country-select-demo"
@@ -11,6 +14,7 @@ export default function ComboBox({options,placeholder}) {
       options={options}
       autoHighlight
       getOptionLabel={(option) => option}
+      onChange={handleSelect}
       renderOption={(props, option) => {
         const { key, ...optionProps } = props;
         return (

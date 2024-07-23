@@ -1,7 +1,7 @@
 import "./navbar.css";
 import React, { useState, useEffect, useRef } from "react";
 export default function Navbar() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
