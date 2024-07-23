@@ -1,0 +1,9 @@
+.footer{
+    background-color: darkgray; /* Background color */
+    color: whitesmoke; /* Text color */
+    padding: 15px; /* Padding inside the footer */
+    text-align: center; /* Center-align text */
+    position: fixed; /* Fixed position at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; 
+}

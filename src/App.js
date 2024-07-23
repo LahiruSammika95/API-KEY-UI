@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import ComboBox from './ComboBox';
+import Navbar from './sections/Navbar';
+import Footer from './sections/Footer';
+
+const SPlist = ['SP1', 'SP2'];
+const APPlist = [];
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+        <Navbar/>
+        <div className='sp-app-drop-down-section'>
+        <ComboBox className="item" options={SPlist} placeholder="Select Service Provider"/> 
+        <ComboBox className="item" options={APPlist} placeholder="Select Application"/>
+        </div>
+       
+        <Footer/>
+
     </div>
   );
 }
